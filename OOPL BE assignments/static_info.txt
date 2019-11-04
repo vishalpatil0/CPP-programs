@@ -1,0 +1,13 @@
+static data member
+1> only one copy of data member is created for all the object of class and for all the progaram
+2> static member are only declared in class but not defined in class
+3> they must be explicitely outside the class using scope resolution operator
+
+static member function
+1> used only to acces static data member
+2> cannot acces any normal data member
+3> not associated with any class object
+4> We can access a static member function with class name, by using following syntax:
+
+	class_name:: function_name(perameter);
+
