@@ -1,3 +1,4 @@
+//getting product of two numbers using factorial method 
 #include<iostream>
 using namespace std;
 int product(int a,int b);
