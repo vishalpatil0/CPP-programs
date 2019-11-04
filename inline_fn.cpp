@@ -1,3 +1,4 @@
+//With inline keyword, the compiler replaces the function call statement with the function
 #include<iostream>
 using namespace std;
 inline int add(int a,int b);
