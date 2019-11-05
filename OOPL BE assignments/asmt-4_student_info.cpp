@@ -117,5 +117,7 @@ int main()
 		cout<<"Do you want to continue"<<endl;
 		cin>>y;
 	}while(y=='y');
+	delete [] a;
+	delete [] c;
 	return 0;
 }
