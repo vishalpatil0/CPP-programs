@@ -1,26 +1,25 @@
 #include<iostream>
-#include<string.h>
 #define max 300
 using namespace std;
 class Book
 {
-	char author[max];
-	char title[max];
-	char pub[max];
+	string author;
+	string title;
+	string pub;
 	int price;
 	int numcop;
 	public:
 		Book();
 		void add_book();
-		int access_title(char a[]);
+		int access_title(string a);
 		void getdata(int);
 		void display();
 };
 Book::Book()
 {
-	strcpy(author,"");
-	strcpy(title,"");
-	strcpy(pub,"");
+	author="";
+	title="";
+	pub="";
 	price=0;
 	numcop=0;
 }
@@ -32,25 +31,26 @@ void Book::display()
 	cout<<"\nPrice		:"<<price;
 	cout<<"\nTotal Copies   :"<<numcop<<endl;
 }
-int Book::access_title(char a[])
+int Book::access_title(string a)
 {
-	if(strcmp(title,a))
+	if(title==a)
 	{
-		return 0;
+		return 1;
 	}
 	else
 	{
-		return 1;
+		return 0;
 	}
 }
 void Book::add_book()
 {
 	cout<<"Title:\t";
-	cin>>title;
+	cin.ignore();
+	getline(cin,title);
 	cout<<"\nAuthor:\t";
-	cin>>author;
+	getline(cin,author);
 	cout<<"\nPublisher:\t";
-	cin>>pub;
+	getline(cin,pub);
 	cout<<"\nPrice:\t";
 	cin>>price;
 	cout<<"\nCopies Available:\t";
@@ -73,7 +73,7 @@ int main()
 	Book b[max];
 	int n,i,j=0,ch;
 	char y;
-	char title[max];
+	string title;
 	cout<<endl;
 	int f;
 	do{
@@ -97,7 +97,8 @@ int main()
 			break;
 		case 3:
 			cout<<"Enter the title of required book"<<endl;
-			cin>>title;
+			cin.ignore();
+			getline(cin,title);
 			for(i=0;i<j;i++)
 			{
 				f=0;
