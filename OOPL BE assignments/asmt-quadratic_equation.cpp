@@ -12,22 +12,22 @@ class quadratic
 		        b=0;
 		        c=0;
 		}
-		friend istream& operator>>(istream &qin,quadratic q);
-		friend ostream& operator<<(ostream &qout,quadratic q);
+		friend quadratic operator>>(istream &qin,quadratic q);
+		friend quadratic operator<<(ostream &qout,quadratic q);
 		quadratic operator+(quadratic q);
 		void evaluate();
 		void root();
 };
-istream& operator>>(istream &qin,quadratic q1)
+quadratic operator>>(istream &qin,quadratic q1)
 {
 	cout<<"Enter the value for a , b and c"<<endl;
 	qin>>q1.a>>q1.b>>q1.c;
-	return qin;
+	return q1;
 }
-ostream& operator<<(ostream &qout,quadratic q1)
+quadratic operator<<(ostream &qout,quadratic q1)
 {
 	qout<<q1.a<<"x*x+"<<q1.b<<"x+"<<q1.c<<endl;
-	return qout;
+	return q1;
 }
 quadratic quadratic::operator+(quadratic q)
 {

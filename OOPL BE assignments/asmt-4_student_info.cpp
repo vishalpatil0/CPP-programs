@@ -75,7 +75,7 @@ inline void student::putdata(data *b)
 	cout<<"\nWeight                    :"<<b->weight;	
 	cout<<"\nHeight                    :"<<b->height;
 	cout<<"\nDriving License Number    :"<<this->license_no;
-	cout<<"\nPolicy Number    :"<<this->policy_no;
+	cout<<"\nPolicy Number   	   :"<<this->policy_no;
 }
 int data::count=0;
 int main()
