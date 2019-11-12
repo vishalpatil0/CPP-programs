@@ -38,7 +38,7 @@ stack<int>addBinary(stack<int> &s1,stack<int> &s2)
 	}
 	if(carry==1)
 	{
-		s2.push(1);
+		s3.push(1);
 	}
 	return s3;	
 }

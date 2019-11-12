@@ -28,18 +28,19 @@ class poly
      }
 
      //display
-     friend void operator << (ostream &a,poly &p)
+     friend poly operator << (ostream &a,poly &p)
      {
      
           cout<<"\n"<<p.a<<" x^2 + "<<p.b<<" x + "<<p.c;
+          return p;
      
      }
      
-     friend istream &operator >> (istream &input,poly &p)
+     friend poly operator >> (istream &input,poly &p)
      {
      
           input>>p.a>>p.b>>p.c;
-          return input;
+          return p;
      
      }
      
