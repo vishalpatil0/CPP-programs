@@ -13,5 +13,18 @@ int main()
 	{
 		cout<<*arr+i<<endl;
 	} 
+
+	short arr[]={1,2,3,4};
+    
+    short * ptr;
+    ptr=arr;
+    cout<<*ptr++<<endl;
+    cout<<*ptr<<endl;
+    cout<<*++ptr<<endl;
+    cout<<*ptr<<endl;
+
+	//In Array Pointer we can't increment the original array with increament and decrement operator bcoz this are constant pointer
+
+	// so to use this opeartors we have to create a pointer which points to the base address of array.
 	return 0;
 }

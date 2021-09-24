@@ -11,5 +11,14 @@ int main()
 	cout<<"&arr[1] = "<<&arr[1]<<endl;
 	cout<<"arr[2] = "<<arr[2]<<endl;
 	cout<<"*(arr+2) = "<<*(arr+2)<<endl;
+
+
+
+	cout<<endl<<"printing array using sizeof opearor"<<endl<<endl;
+	int arr1[]={1,2,3,4};
+    for (int i = 0; i < sizeof(arr1)/sizeof(arr1[0]); i++)
+    {
+        cout<<i<<endl;
+    }
 	return 0;
 }

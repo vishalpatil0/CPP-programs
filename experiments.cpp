@@ -1,10 +1,13 @@
 #include<iostream>
-#define c 12
+#include<string.h>
+#include<cstring>
+#define size 100
 using namespace std;
 
 int main()
-{
-    int c=13;
-    
-    return 0;
+{   
+    string s1="vishalpatil";
+    string s2="patil";
+
+    cout<<s1-s2<<endl;
 }

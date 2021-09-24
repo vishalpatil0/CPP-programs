@@ -2,9 +2,12 @@ Stream is known as sequence of bytes.
 Input stream is flow of bytes from input device to the main memory
 Ouput Stream is the flow of bytes from main memory to the output device.
 
+
 Insertion operator is <<
 
 Extraction operator is >>
+
+
 
 There are two types of header files
 1)System header files : comes with the compiler
@@ -13,11 +16,27 @@ There are two types of header files
 2)User defined header files: written by the programmer
     syntax: #include "this.h"
 
+
+
 typeid(variable_name).name() =====this prints the type of variable.
 
+
 :: Scope Resolution operator
+
+
 
 Manipulators are those who maipulates the flow of bytes.
 header file is iomanip
 1. endl
 2. setw
+
+
+
+Control Sturctures types:
+1. sequence Sturctures ==  sequence by sequence execution
+2. selection Sturctures ==  if else and switch
+3. loop structures ==  loops 
+
+we can also use the prinft and scanf function in c++
+
+Function prototypng is nothing but declaring function before using.
