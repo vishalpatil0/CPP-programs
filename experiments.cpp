@@ -1,13 +1,15 @@
 #include<iostream>
-#include<string.h>
-#include<cstring>
-#define size 100
 using namespace std;
-
+class demo{
+    public:
+    demo();
+};
+demo::demo()
+{
+    cout<<"ehh"<<endl;
+}
 int main()
 {   
-    string s1="vishalpatil";
-    string s2="patil";
-
-    cout<<s1-s2<<endl;
+    demo d=new demo();
+    return 0;
 }

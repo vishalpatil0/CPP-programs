@@ -2,10 +2,10 @@
 using namespace std;
 class cube
 {
-	public:
 		char name[30];
 		int age;
 	
+	public:
 		void getdata();
 		void putdata();
 };

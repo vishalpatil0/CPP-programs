@@ -4,7 +4,7 @@ static data member
 3> they must be explicitely outside the class using scope resolution operator
 
 static member function
-1> used only to acces static data member
+1>  only  acces to static data member
 2> cannot acces any normal data member
 3> not associated with any class object
 4> We can access a static member function with class name, by using following syntax:

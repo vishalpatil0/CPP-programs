@@ -1,6 +1,18 @@
 #include<iostream>
 using namespace std;
+/*
+Friend function can access the private member of a class.
+by just delcaraing a function using "Friend" keyword in class it become friend function.
 
+
+Friend function can access the private member of a class.
+
+can't use friend keyword outside of the class.
+
+can't use non static member of a classs in friend function without its object even if they are public.
+
+Even if friend function define in the class it is not a member of class means you  can't acces it with class object or class name with help of scope resolution operator.
+*/
 class vol;
 class cube
 {

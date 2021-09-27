@@ -40,3 +40,6 @@ Control Sturctures types:
 we can also use the prinft and scanf function in c++
 
 Function prototypng is nothing but declaring function before using.
+
+we can't declare same variable twice in the same scope 
+but we can declare it multiple times in different scopes.

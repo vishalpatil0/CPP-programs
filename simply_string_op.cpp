@@ -47,7 +47,7 @@ int main()
 
 
 	//Returns 0 if s1 and s2 are the same; less than 0 if s1<s2; greater than 0 if s1>s2.
-	cout<<strcmp(temp,str)<<endl;
+	cout<<strcmp(temp,str)<<endl; //only compare first character of both string
 
 
 	//Returns 0 if s1 and s2 are the same; less than 0 if s1<s2; greater than 0 if s1>s2.

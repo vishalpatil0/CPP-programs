@@ -2,6 +2,21 @@
 C++ has in its definition a way to represent sequence of characters as an object of class. This class is called std:: string. String class stores the characters as a sequence of bytes with a functionality of allowing access to single byte character. 
 
 In string class object we can't use string.h object.
+
+Internally it stores the string as character of array so you can change it like str[1]='z'  or can access it like str[i]
+
+at(X) -- return the character at position X in the string. Similar to using the [] operator
+
+str1.compare(str2) -- performs a comparison, like the c-string function strcmp. A negative return means str1 comes first. Positive means str2 comes first. 0 means they are the same
+
+str1.compare(str2, X, Y) -- compares the portions of the strings that begin at index X and have length Y. Same return value interpretation as above
+
+str.insert(X, Y, CH) -- inserts the character CH into string str Y times, starting at position X
+
+str.insert(X, str2) -- inserts str2 (string object or char array) into str at position X
+
+str.find(str2, X) -- returns the first position at or beyond position X where the string str2 is found inside of str
+str.find(CH, X) -- returns the first position at or beyond position X where the character CH is found in str
 */
 
 #include<iostream>
@@ -72,5 +87,26 @@ int main()
     s1="Vishal";
     s2.swap(s1); //swap with another.
     cout<<s1<<s2<<endl;
+
+    s1.append(" Patil"); //add this string to the back of s1.
+
+    s1.assign("Yogesh"); //change the string.
+
+    string s("Vishal");
+    string s2(s);           //also create string in this format.
+
+    getline(cin,s,',');     //this will only read upto comma normally it is upto newline.
+
+    for (int i = 0; i < s.length(); i++)
+    {
+        cout<<s[i]<<endl;       //printing character by character
+    }
+
+    s[0]='Z';
+    s.clear();                  //create empty string
+
+    cout<<s.empty();<<endl;     //return true if the string is currently empty, false otherwise
+
+    s=s.substr(2,4); //starting position and number of character from that position. can pass starting position only
     return 0;
 }

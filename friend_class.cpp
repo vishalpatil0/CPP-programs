@@ -1,6 +1,7 @@
 //when we want to use private data member of class1 in class2 then we can use them by declaring class2 as friend of class1
 #include<iostream>
 using namespace std;
+class abc;
 class xyz
 {
 	private:
