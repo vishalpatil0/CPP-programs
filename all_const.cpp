@@ -1,3 +1,6 @@
+/*
+In C++ if you have defined the parametric constructor then you must to define default constructor.
+*/
 #include<iostream>
 using namespace std;
 class abc

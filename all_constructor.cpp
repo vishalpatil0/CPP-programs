@@ -9,6 +9,10 @@ Constructor initlized the data member of class.
 Default constructor get called whenever object of class get created.
 
 It is good to have constructor public but you can still use private constructor with the help of friend class or function.
+
+In C++ if you have defined the parametric constructor then you must to define default constructor.
+
+When there is no copy constructor found then compiler provides it own copy constructor.
 */
 
 #include<iostream>

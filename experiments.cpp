@@ -1,15 +1,20 @@
 #include<iostream>
 using namespace std;
 class demo{
+    int a;
     public:
-    demo();
+        demo(int x)
+        {
+            a=x;
+        }
+        // void display()
+        // {
+        //     cout<<"Value of x is = "<<a<<endl;
+        // }
 };
-demo::demo()
-{
-    cout<<"ehh"<<endl;
-}
 int main()
-{   
-    demo d=new demo();
+{
+    demo d;
+    // d.display();
     return 0;
 }

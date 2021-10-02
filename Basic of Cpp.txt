@@ -43,3 +43,17 @@ Function prototypng is nothing but declaring function before using.
 
 we can't declare same variable twice in the same scope 
 but we can declare it multiple times in different scopes.
+
+
+In c and c++ if if-else and loops dont have curly brackets then the first statment after them get executed.
+
+By adding semicolon at the end of for loop like
+for( ; ; );   just like it 
+it only loop for given condition but it will not execute and block or any statement below it it is something like self execution loop.
+
+and also for if else
+if there is semicolon at the end of if statment then it became self executing loop
+
+if(condition); 
+
+it will not execute below code but will execute the condition in it.
