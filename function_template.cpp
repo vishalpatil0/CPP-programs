@@ -1,8 +1,8 @@
 #include <iostream> 
 using namespace std;
-template<class T> 
-T GetMax (T a,T b)
-{
+template<class T=int> 
+T GetMax (T a,B b)
+{  
 	return (a>b?a:b); 
 }
 int main () 

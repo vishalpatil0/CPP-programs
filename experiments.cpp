@@ -1,20 +1,11 @@
 #include<iostream>
+#include<vector>
 using namespace std;
-class demo{
-    int a;
-    public:
-        demo(int x)
-        {
-            a=x;
-        }
-        // void display()
-        // {
-        //     cout<<"Value of x is = "<<a<<endl;
-        // }
-};
 int main()
 {
-    demo d;
-    // d.display();
+    vector <int>v2;
+    v2[0]=32;
+    cout<<v2[0]<<endl;
+    
     return 0;
 }

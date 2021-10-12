@@ -1,7 +1,8 @@
 //simple template class with single arguments
+//template are paramterized class
 #include<iostream>
 using namespace std;
-template<class T>
+template<typename T>
 class abc
 {
 	public:
