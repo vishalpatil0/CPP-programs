@@ -3,24 +3,26 @@ Random access fast
 insertion deletion is slow
 Insertion at the end fast
 
+Contigous memeory allocation
+
 if it got full it will create new array and copy the element to it.
 */
 #include <iostream>
 #include <vector>
+#include<algorithm>
 using namespace std;
 template <class T>
 void display(vector<T> &temp)
 {
     cout << "Element of the vector are = " << endl;
-    for (int i = 0; i < temp.size(); i++)
-    {
-        cout << temp.at(i) << endl;
-    }
+    for(int x: temp) cout<<x<<endl;
 }
 
 int main()
 {
+    // vector<short> vct={1,2,3,4,5};  short cut way to create declare vector.
     vector<int> v1;
+    // vector<int> bin(v1); vecotr with already available vector
     int temp;
     if (v1.empty())
     {
@@ -90,5 +92,16 @@ int main()
 
     vector<char> v4(v3);
     display(v4);
+
+    //sorting of vector using sort() from algorithm STL
+    vector<int> demo;
+    for (int i = 0; i < 5; i++)
+    {
+        int data;
+        cin>>data;
+        demo.push_back(data);
+    }
+    sort(demo.begin(),demo.end());
+    display(demo);
     return 0;
 }

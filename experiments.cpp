@@ -1,11 +1,11 @@
 #include<iostream>
-#include<vector>
 using namespace std;
+class Demo
+{
+    int a=10;
+};
 int main()
 {
-    vector <int>v2;
-    v2[0]=32;
-    cout<<v2[0]<<endl;
-    
+    Demo d1=Demo();  
     return 0;
 }
