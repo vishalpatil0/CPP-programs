@@ -1,11 +1,10 @@
 #include<iostream>
+#include<algorithm>
 using namespace std;
-class Demo
-{
-    int a=10;
-};
 int main()
 {
-    Demo d1=Demo();  
+    string str="vishal";
+    sort(str.begin(),str.end());
+    cout<<str<<endl;
     return 0;
 }

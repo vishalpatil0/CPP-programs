@@ -14,6 +14,5 @@ int main()
     queue<string> m(q);
     m.push("Ganesh");
     q.swap(m);
-
     return 0;
 }
