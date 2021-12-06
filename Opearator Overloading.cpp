@@ -25,6 +25,7 @@ class addition{
         int operator +(addition A)
         {
             int res=num+A.num;
+            cout<<A.num<<"yeee"<<endl;
             return res;
         }
         addition operator -(addition A)

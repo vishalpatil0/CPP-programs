@@ -105,7 +105,7 @@ int main()
     s[0]='Z';
     s.clear();                  //create empty string
 
-    cout<<s.empty();<<endl;     //return true if the string is currently empty, false otherwise
+    cout<<s.empty()<<endl;     //return true if the string is currently empty, false otherwise
 
     s=s.substr(2,4); //starting position and number of character from that position. can pass starting position only
     return 0;

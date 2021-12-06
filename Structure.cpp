@@ -31,6 +31,10 @@ typedef struct Student
         roll=b;
         nickname=s;
     }
+    ~Student()
+	{
+		cout<<"Destructor is called."<<endl;
+	}
 }stud;
 
 int main()

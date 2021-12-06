@@ -5,8 +5,12 @@
 using namespace std;
 int main()
 {
+    int ar[]={1,2,3,4,5,6};
+	sort(ar,ar+6,greater<int>()); //descending order sort
+    
     int arr[]={12,45,2,6,8,5};
     int length=sizeof(arr)/sizeof(arr[0]);
+    
     sort(arr,arr+length);
     cout<<"Binary Search for 8 = "<<binary_search(arr,arr+length,45)<<endl; //return true if element is present
 

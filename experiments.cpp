@@ -3,8 +3,9 @@
 using namespace std;
 int main()
 {
-    string str="vishal";
-    sort(str.begin(),str.end());
-    cout<<str<<endl;
-    return 0;
+	string str="";
+	string temp=str;
+	reverse(str.begin(),str.end());
+	if(temp==str) cout<<"hello"<<endl;
+	return 0;
 }
