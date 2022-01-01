@@ -57,3 +57,5 @@ if there is semicolon at the end of if statment then it became self executing lo
 if(condition); 
 
 it will not execute below code but will execute the condition in it.
+
+cin.get() = reads the character.

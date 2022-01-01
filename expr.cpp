@@ -1,44 +1,40 @@
-// CPP program to demonstrate use of 
-// std::vector::reserve 
-#include <chrono>
-#include <iostream>
-#include <vector>
-  
-using std::vector;
-using std::cout;
-using namespace std::chrono;
-  
+#include<iostream>
+using namespace std;
+bool check(int num)
+{
+    for(int i=2;i<num/2;i++)
+    {
+        if(num%i==0)    return true;
+    }
+    return false;
+}
+void print(int teststart,int testend)
+{
+    int ts=0;
+    for(int i=teststart;i<=testend;i++)
+    {
+        if(check(i))
+        {
+            if(ts==0)   ts=i;
+        }
+        else
+        {
+            if(ts!=0)
+            {
+                if((i-ts)>5)
+                {
+                    cout<<ts<<' '<<i-1<<' '<<i-ts<<endl;
+                }
+                ts=0;
+            }
+        }
+    }
+}
 int main()
 {
-    // No of charactes
-    int N = (int)1e6;
-  
-    vector<int> v1, v2;
-  
-    // Reserve space in v2
-    v2.reserve(N);
-  
-    // Start filling up elements in v1
-    // To measure execution time in C++, refer below
-    // https://www.geeksforgeeks.org/measure-execution-time-function-cpp/
-  
-    auto start = high_resolution_clock::now();
-    for (int i = 0; i < N; ++i)
-        v1.push_back(i);
-    auto stop = high_resolution_clock::now();
-    auto duration = duration_cast<microseconds>(stop - start);
-  
-    cout << "Method I took " << duration.count() << " microseconds\n";
-  
-    // Start filling up elements in v2
-    start = high_resolution_clock::now();
-    for (int i = 0; i < N; ++i)
-        v2.push_back(i);
-    stop = high_resolution_clock::now();
-    duration = duration_cast<microseconds>(stop - start);
-  
-    cout << "Method II took " << duration.count() 
-         << " microseconds \n";
-  
+    int start,end;
+    cout<<"Enter the start and end point = ";
+    cin>>start>>end;
+    print(start,end);
     return 0;
 }
