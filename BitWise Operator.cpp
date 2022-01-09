@@ -3,7 +3,7 @@ AND :   if you & two same numbers then result is the same number.
         if you & any number with 0 then it is 0.
 
 OR  :   if you | any number with 0 then result is the same number.
-        if you & two same numbers then result is the same number.
+        if you | two same numbers then result is the same number.
 
 XOR :   if you ^ two same number then result is 0.
         if you ^ any number with 0 then result is same number.

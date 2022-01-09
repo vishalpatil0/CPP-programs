@@ -21,6 +21,7 @@ void display(vector<T> &temp)
 int main()
 {
     // vector<short> vct={1,2,3,4,5};  short cut way to create declare vector.
+    // vector<int>vect(4); 4 is the size of the vector
     vector<int> v1;
     // vector<int> bin(v1); vecotr with already available vector
     int temp;
