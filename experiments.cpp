@@ -4,10 +4,10 @@ using namespace std;
 
 int main()
 {
-	vector<int>vect(4);
-	for(int x:vect)
-	{
-		cout<<x<<endl;
-	}
+	int a=1;
+	int &b=a;
+	int &c=b;
+	int &d=a;
+	cout<<d<<endl;
 	return 0;
 }

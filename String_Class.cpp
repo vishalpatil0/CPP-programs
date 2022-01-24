@@ -21,6 +21,7 @@ str.find(CH, X) -- returns the first position at or beyond position X where the 
 
 #include<iostream>
 #include<string.h>
+#include<algorithm>
 using namespace std;
 int main()
 {
@@ -108,5 +109,17 @@ int main()
     cout<<s.empty()<<endl;     //return true if the string is currently empty, false otherwise
 
     s=s.substr(2,4); //starting position and number of character from that position. can pass starting position only
+
+    string temp_1="My name is vishal.";
+    int pos=temp_1.find('v');
+    temp_1.replace(pos,6,"Namrata"); //replace the vishal in temp_1 with namrata.
+
+    int p=temp_1.find("is");
+    cout<<p<<endl;
+
+    string str3="VISHAL PATIL";
+    //lower case conversion
+    transform(str3.begin(),str3.end(),str3.begin(),::tolower);
+    cout<<str3<<endl;
     return 0;
 }
