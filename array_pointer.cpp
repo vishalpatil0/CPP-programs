@@ -2,8 +2,15 @@
 using namespace std;
 
 int main()
-{
+{	
+	//&arr and arr is same both gives the address of the first element of the array.
+	// arr[2] == *(arr+2) therefore
+	// 2[arr] == *(2+arr)  
+	//basically arr[2] get tranformed into *(arr+2) during compilation so it is valid.
+
 	int arr[]={1,2,3,4,5};
+
+	
 	
 	cout<<*arr<<endl;  //*a=a[0]
 	

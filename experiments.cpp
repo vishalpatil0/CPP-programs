@@ -1,13 +1,12 @@
 #include<iostream>
-#include<vector>
 using namespace std;
-
 int main()
 {
-	int a=1;
-	int &b=a;
-	int &c=b;
-	int &d=a;
-	cout<<d<<endl;
+	int a=5;
+	int *ptr;
+	ptr=&a;
+	cout<<"Previous address -- > "<<ptr<<endl;
+	ptr++;
+	cout<<"address -- > "<<ptr<<endl;
 	return 0;
 }
