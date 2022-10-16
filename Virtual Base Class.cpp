@@ -16,6 +16,9 @@ class Student{
     protected:
         int roll;
     public: 
+            Student(){
+                cout<<"Class Student constructor"<<endl;
+            }
             void set(int a)
             {
                 roll=a;
@@ -41,7 +44,7 @@ class Test: virtual public Student{
                 <<"Physics = "<<physics<<endl;
         }
 };
-class Sports:virtual public Student
+class Sports: virtual public Student
 {
     protected:
     float score;

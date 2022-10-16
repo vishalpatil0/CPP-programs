@@ -1,9 +1,9 @@
 #include<iostream>
 using namespace std;
-static int count;
 class item
 {
 	public:
+		static int count;
 		int a;
 		void getcount(int a)
 		{
@@ -15,7 +15,7 @@ class item
 			cout<<count<<endl;
 		}
 };
-//int item::count;
+int item::count;
 int main()
 {
 	item a,b,c;

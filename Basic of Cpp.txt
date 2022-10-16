@@ -59,3 +59,57 @@ if(condition);
 it will not execute below code but will execute the condition in it.
 
 cin.get() = reads the character.
+
+In cpp structure have acces specifier and constructors.
+Structure variable can't be protected
+
+Destructor cannot have parameters.
+
+If you are going to use c++ std::string in prinft you need to use .c_str() method to convert it into c style string.
+
+You cannot initlize the non-static member of class out the class in the global section just like static member (using :: scope resolution operator).
+
+when you create object of class like -> Demo d1(); then it get stored on stack memory so when program stopped the execution it the destructor get called.
+
+But when you create object of class like new Demo(); then it get stored on heap memory and destructor only get invoked when you explicitly delete the memory by using delete keyword.
+
+In c++ you can create object of class by two ways:->
+i)   Demo d1;
+ii)  Demo d1();
+iii) Demo d1(12,"vishal"); //parametric constructor
+iv)  new Demo(12);          //without reference to point at it. //get stored in the heap memory
+v)   Demo *ptr = new Demo();
+vi)  Demo &ptr = new Demo();    //not allowed
+vii) Demo *ptr = new Demo();
+     Demo &rtr = *ptr;          //allowed
+
+If base class have parametrized constructor but not defuault one then you can't add default constructor for child class also.
+
+In cpp there is not super keyword but you can mimic super other ways:
+a) super is used for calling parent class constructor for this:
+
+    child_class_constructor(int a,int b,int c):parent_class_constructor(int b, int c){
+        //child class constructor body
+    }
+b) super is also used for invoking parent class properties in child class you can do it by using :: scop resolution operator
+
+    ex:
+
+        class child: public parent{
+            child(){
+                cout<< parent::a;
+
+                parent::show();
+
+                //here we invoked the parent class properties.
+            }
+        }
+
+While inherting the class if you don't mention the access specifier explicitly then the default access is private 
+Means all member of parent class even if they are public they became private member of child class.
+
+If you have created a class using template then you need to use the "< >" angular bracket and provide data type every time you create a object of that class.
+
+In c++ when you pass the object through function and the parameter signature is as follow
+void fun(classA a); 
+then a is the pass by value it point to separate memeory location anohter copy not the same one.

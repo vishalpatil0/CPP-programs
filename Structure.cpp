@@ -14,7 +14,16 @@ cannot be declared as protected.
 #include<iostream>
 #include<string.h>
 using namespace std;
-typedef struct Student
+
+struct School{
+    static char grade;
+    protected:
+    const string SchoolName = "Nutan Vidyalaya";
+};
+
+char School::grade = 'A';
+
+typedef struct Student : private School
 {
     int marks;
     int roll;
@@ -35,6 +44,10 @@ typedef struct Student
 	{
 		cout<<"Destructor is called."<<endl;
 	}
+
+    void show(){
+        cout<<"School Name -> "<<SchoolName<<endl;
+    }
 }stud;
 
 int main()
@@ -57,9 +70,16 @@ int main()
     cout<<"Marks of s2 is = "<<s2.marks<<endl;
 
 
-    // stud s3={96,1606095,"Neha","Nehru"}; also create object of structure like that.
+    // stud s3={96,1606095,"Neha","Nehru"}; this is only possible in C language not in C++.
 
     // Creating instance of strcuture using parametric constructor.
     stud s4(89,1606084,"Yadnyesh"); //default constructor don't get called by creating instance using parametric constructor.
+
+    stud *s5 = &s4;
+    s5->~Student(); //we can also call destructor just like function 
+
+    s5->show(); //calling method from structure.
+
+
     return 0;
 }

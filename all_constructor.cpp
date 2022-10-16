@@ -2,7 +2,7 @@
 Constructor is special type function with no return type.
 Name is same as class.
 
-can be declared only in class and define outsdie of the class with the help of scope resolution operator just like normal function.
+can be declared only in class and define outside of the class with the help of scope resolution operator just like normal function.
 
 Constructor initlized the data member of class.
 

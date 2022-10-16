@@ -23,13 +23,14 @@ class derived:public base{
         cout<<"Displaying the value of base class = "<<a<<endl;
         cout<<"Displaying the value of derived class = "<<b<<endl;
     }
+    void derivedClassMethod(){
+        cout<<"Derived class method"<<endl;
+    }
 };
 int main()
 {
     derived d_obj;
-    base b_obj;
-    typedef base* bpointer;
-    bpointer bptr=&d_obj;
+    base *bptr=&d_obj;
     bptr->display();
     return 0;
 }

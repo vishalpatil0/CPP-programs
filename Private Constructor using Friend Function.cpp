@@ -2,18 +2,18 @@
 using namespace std;
 class demo{
     demo();
-    friend void k();
+    friend demo * k();
 };
 demo::demo()
 {
     cout<<"ehh"<<endl;
 }
-void k()
+demo * k()
 {
-    demo d;
+    return new demo();
 }
 int main()
 {   
-    k();
+    demo *dmo = k();
     return 0;
 }

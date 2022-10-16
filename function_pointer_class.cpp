@@ -16,12 +16,16 @@ class cube
 			cout<<"The name is "<<data2<<endl;
 			cout<<"The age is "<<data1<<endl;
 		}
+		void fnPointer(void (*fptr)()){
+			fptr();
+		}
 };
 int main()
 {
 	cube *c;
 	c->getdata(19,'a');
 	c->putdata();
+	c->fnPointer(c->putdata);
 	delete c;
 	return 0;
 }

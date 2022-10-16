@@ -7,7 +7,10 @@ class vish
     friend class nam;
 
 public:
-    void k(nam);
+    void k(nam n)
+    {
+        cout << n.b << endl;
+    }
 };
 class nam
 {
@@ -20,11 +23,6 @@ public:
     }
     friend class vish;
 };
-
-void vish::k(nam n)
-{
-    cout << n.b << endl;
-}
 
 int main()
 {

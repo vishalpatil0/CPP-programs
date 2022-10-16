@@ -1,7 +1,7 @@
 #include <iostream> 
 using namespace std;
 template<class T=int> 
-T GetMax (T a,B b)
+T GetMax (T a, b)
 {  
 	return (a>b?a:b); 
 }
