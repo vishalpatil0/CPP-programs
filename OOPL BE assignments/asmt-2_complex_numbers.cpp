@@ -47,11 +47,10 @@ class complex
 			temp.img=temp.img/x;
 			return temp;
 		}
-		friend complex operator<<(ostream &a,complex &c1)
+		friend void operator<<(ostream &a,complex &c1)
 		//operator for printing complex number
 		{
 			a<<"("<<c1.real<<")"<<" + "<<"("<<c1.img<<"i"<<")";
-			return c1;
 		}
 		friend complex operator>>(istream &a,complex &c1)
 		//operator for reading complex number

@@ -1,35 +1,56 @@
 #include<iostream>
-#define size 10
 using namespace std;
-void print(int arr[]);
-void revPrint(int arr[]);
-int main(){
-	int arr[size];
-	cout<<"Randomly allocating elements to arry........"<<endl;
-	for (int i = 0; i < size; i++)
-	{
-		arr[i]=i+167-23;
+
+
+class demo{
+	public:
+		int num;
+	friend void operator<<(ostream& co, demo d);
+
+	demo operator+(demo dm){
+		demo dme;
+		dme.num = -1 * dm.num;
+		return dme;
 	}
-	cout<<"Printing array"<<endl;
-	print(arr);
-	cout<<"Reverse array printing"<<endl;
-	revPrint(arr);
+
+	void operator--(){
+		this->num *= 10;
+	}
+
+	void --operator(){
+		this->num *= 20;
+	}
+
+	void operator+=(demo &d2){
+	this->num += d2.num;
+}
+};
+
+void operator-(demo &dum){
+	dum.num = -dum.num;
+}
+
+
+void operator<<(ostream& co, demo d){
+	co<<d.num<<endl;
+}
+
+
+int main(int argc, char const *argv[])
+{
+	demo d;
+	d.num = 12;
+	-d;
+	--d;
+	d = d+d;
+	cout<<d;
+
+	demo d1;
+	demo d2;
+	d1.num = 20;
+	d2.num = 30;
+
+	d1 += d2;
+	cout<<d1.num<<endl;
 	return 0;
-}
-void print(int arr[]){
-	for (int i = 0; i < size; i++)
-	{
-		cout<<i+1<<" = "<<arr[i]<<endl;
-	}
-}
-void revPrint(int arr[]){
-	int front = 0;
-	int back = size-1;
-	while(front<back){
-		swap(arr[front++],arr[back--]);
-	}
-	for (int i = 0; i < size; i++)
-	{
-		cout<<i+1<<" = "<<arr[i]<<endl;
-	}
 }

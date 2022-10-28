@@ -85,14 +85,30 @@ void changingObject(A &abc){
     abc.g = 9999;
 }
 
+class genZ{
+    private:
+        int number_1;
+    public:
+        void setNumber_1(int number_1){
+            (*this).number_1 = number_1;
+        }
+        int getNumber_1(){
+            return number_1;
+        }
+        genZ operator +(genZ z){
+            genZ gz;
+            gz.number_1 = number_1 + z.number_1;
+            return gz;
+        }
+};
+
 int main(int argc, char const *argv[])
 {
-    sho<string,double>("vishal",4.5555555555555555555);
-    Power <int,double>p1;
-
-    A abd;
-    abd.g = 12;
-    changingObject(abd);
-    cout<<abd.g<<endl;
+    genZ A, B;
+    A.setNumber_1(11);
+    B.setNumber_1(11);
+    genZ c = A + B;
+    c = 20;
+    cout<<c.getNumber_1()<<endl;
     return 0;
 }

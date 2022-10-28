@@ -113,3 +113,6 @@ If you have created a class using template then you need to use the "< >" angula
 In c++ when you pass the object through function and the parameter signature is as follow
 void fun(classA a); 
 then a is the pass by value it point to separate memeory location anohter copy not the same one.
+
+Operator overloading means we can use C++ opeartor not only with predefined data type but also with user-defined data type like classes.
+Redefining the meaning of operators really does not change their original meaning; instead, they have been given additional meaning along with their existing ones.
