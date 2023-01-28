@@ -1,9 +1,13 @@
 #include <iostream> 
 using namespace std;
 template<class T=int> 
-T GetMax (T a, b)
+T GetMax (T a,T b)
 {  
 	return (a>b?a:b); 
+}
+template<typename T>
+void vishal(T a){
+    cout<<a<<endl;
 }
 int main () 
 {
@@ -13,6 +17,7 @@ int main ()
     r=GetMax(p,q); 
     cout<<k<<"\n";
     cout<<r<<endl; 
+    vishal("vishal");
     return 0; 
 }
 

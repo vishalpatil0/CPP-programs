@@ -29,8 +29,7 @@ class derived:public base{
 };
 int main()
 {
-    derived d_obj;
-    base *bptr=&d_obj;
+    base *bptr = new derived();
     bptr->display();
     return 0;
 }
