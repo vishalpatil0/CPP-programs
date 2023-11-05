@@ -1,17 +1,17 @@
 //Destructor doesn't take and return any arugements.
 #include<iostream>
 using namespace std;
-int count=0;
+int cnt=0;
 class Demo
 {
     public:
         Demo()
         {
-            cout<<"Default Constructor with count value = "<<++count<<endl;
+            cout<<"Default Constructor with count value = "<<++cnt<<endl;
         }    
         ~Demo()
         {
-            cout<<"Destructor is called with count value is = "<<count--<<endl;
+            cout<<"Destructor is called with count value is = "<<cnt--<<endl;
         }
 };
 int main()

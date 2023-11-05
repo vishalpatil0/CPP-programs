@@ -73,7 +73,7 @@ when you create object of class like -> Demo d1(); then it get stored on stack m
 
 But when you create object of class like new Demo(); then it get stored on heap memory and destructor only get invoked when you explicitly delete the memory by using delete keyword.
 
-In c++ you can create object of class by two ways:->
+In c++ you can create object of class by following ways:->
 i)   Demo d1;
 ii)  Demo d1();
 iii) Demo d1(12,"vishal"); //parametric constructor

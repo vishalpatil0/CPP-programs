@@ -45,7 +45,7 @@ int main()
     cout<<"After using pop_back function on string 1 = "<<s1<<endl;
 
     cout<<"Capacity of s1 is = "<<s1.capacity()<<endl;
-    /*his function returns the capacity allocated to the string, which can be equal to or more than the size of the string. Additional space is allocated so that when the new characters are added to the string, the operations can be done efficiently.
+    /*this function returns the capacity allocated to the string, which can be equal to or more than the size of the string. Additional space is allocated so that when the new characters are added to the string, the operations can be done efficiently.
     Normally there is more space as required.*/
     
 

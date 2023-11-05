@@ -33,7 +33,7 @@ int main()
     //     d2[i].display("shruti");
     // }
     
-    demo *dtr=&d2[2];
+    demo *dtr=d2;
     for (int i = 0; i < 2; i++)
     {
         dtr->display("Kavita");

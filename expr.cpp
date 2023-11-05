@@ -1,12 +1,13 @@
 #include<iostream>
+
 using namespace std;
-void show(){
-    cout<<"showing......"<<endl;
-}
-void callFunction(void (*fptr)()){
-    (*fptr)();
-}
-int main(){
-    long g = 12l;
-	cout<<g<<endl;
+
+class Demo {
+    public:
+    virtual void display() = 23;
+};
+int main(int argc, char const *argv[])
+{
+    // Demo d;
+    return 0;
 }
